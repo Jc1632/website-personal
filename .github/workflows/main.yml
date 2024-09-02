@@ -25,7 +25,7 @@ jobs:
       run: npm run build
 
     - name: Deploy to S3
-      uses: jakejarvis/s3-sync-action@v1
+      uses: jc_ag/s3-sync-action@v1
       with:
         args: --delete --exclude '.git/*' --exclude 'README.md'
       env:
